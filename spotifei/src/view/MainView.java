@@ -26,7 +26,7 @@ public class MainView extends JFrame {
 
         btnPlaylists.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Abrindo Minhas Playlists...");
+                new PlaylistView();
             }
         });
 
