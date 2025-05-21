@@ -7,21 +7,22 @@ import java.awt.event.ActionListener;
 
 public class MainView extends JFrame {
     public MainView() {
-        setTitle("Spotifei - Tela Principal");
+        setTitle("Spotifei - Home");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new GridLayout(3, 1, 10, 10));
 
-        JButton btnMusicas = new JButton("Minhas Músicas");
-        JButton btnPlaylists = new JButton("Minhas Playlists");
+        JButton btnMusicas = new JButton("Músicas");
+        JButton btnPlaylists = new JButton("Playlists");
         JButton btnHistorico = new JButton("Histórico de Reprodução");
 
         btnMusicas.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Abrindo Minhas Músicas...");
+                new MusicasView();
             }
         });
+
 
         btnPlaylists.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
