@@ -12,7 +12,7 @@ public class LoginView extends JFrame {
     private JButton btnLogin;
 
     public LoginView() {
-        setTitle("Login - Spotifei");
+        setTitle("Spotifei - Login");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

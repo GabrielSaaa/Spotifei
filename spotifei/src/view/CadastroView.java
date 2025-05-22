@@ -12,7 +12,7 @@ public class CadastroView extends JFrame {
     private JButton btnCadastrar;
 
     public CadastroView() {
-        setTitle("Cadastro de Usuário - Spotifei");
+        setTitle("Spotifei - Cadastro");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -51,6 +51,8 @@ public class CadastroView extends JFrame {
 
         if (sucesso) {
             JOptionPane.showMessageDialog(this, "Usuário cadastrado com sucesso!", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+            dispose();
+            new LoginView();                        
         } else {
             JOptionPane.showMessageDialog(this, "Erro ao cadastrar usuário!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
