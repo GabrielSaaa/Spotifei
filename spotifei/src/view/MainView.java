@@ -15,7 +15,7 @@ public class MainView extends JFrame {
 
         JButton btnMusicas = new JButton("Músicas");
         JButton btnPlaylists = new JButton("Playlists");
-        JButton btnHistorico = new JButton("Histórico de Reprodução");
+        JButton btnHistorico = new JButton("Histórico");
 
         btnMusicas.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -32,7 +32,7 @@ public class MainView extends JFrame {
 
         btnHistorico.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Abrindo Histórico de Reprodução...");
+                new HistoricoView();
             }
         });
 
